@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Элина Штеренгарц](https://up.htmlacademy.ru/htmlcss/23/user/802143).
-* Наставник: [Алексей Пудников] (https://up.htmlacademy.ru/htmlcss/23/user/71418).
+* Наставник: [Алексей Пудников](https://up.htmlacademy.ru/htmlcss/23/user/71418).
 
 ---
 

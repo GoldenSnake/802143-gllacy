@@ -12,12 +12,29 @@
           <img src="img/logo.svg" width="160" height="70" alt="Мороженое «Глейси»">
         </a>
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
+          <li>
+            <a href="catalog.html">Каталог</a>
+            <ul class="sub-menu">
+              <li><a href="#">Новинки</a></li>
+              <li><a href="inner.html">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
           <li><a href="delivery.html">Доставка и оплата</a></li>
           <li><a href="about.html">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="login-link">Поиск</li>
+          <li class="login-link">
+            <a class="search-btn" href="search.html">Поиск</a>
+            <div class="search-form"> 
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="user-search"><span>Что ищем?</span></label>
+                <input type="search" name="search" id="user-search" placeholder="Что ищем?">
+              </form>
+            </div>
+          </li>
           <li class="login-link">
             <a class="login-btn" href="login.html">Вход</a>
             <div class="login-form">

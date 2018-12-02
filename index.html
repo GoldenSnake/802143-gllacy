@@ -163,6 +163,27 @@
           <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
         </div>
       </footer>
+      
+      <section class="modal modal-feedback">
+        <h3>Мы обязательно вам ответим!</h3>
+        <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          
+          <label class="visually-hidden"><span>Как вас зовут?</span>
+            <input type="text" name="feedback-name" placeholder="Как вас зовут?">
+          </label>
+           
+          <label class="visually-hidden"><span>Ваша почта для ответа?</span>
+            <input type="email" name="email" placeholder="Ваша почта для ответа?">
+          </label>
+          
+          <label class="visually-hidden"><span>Напишите что-нибудь...</span>
+            <textarea name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
+          </label>
+                    
+          <button class="btn">Отправить</button>
+        </form>
+      </section>
 
     </body>
 </html>

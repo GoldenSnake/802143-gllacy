@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: "Roboto",Tahoma,sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #323232;
+  
+  background-color: #849d8f;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.navigation {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.user-navigation {
+  font-weight: 500;
+}
+
+.site-navigation,
+.sub-menu,
+.user-navigation,
+.social,
+.footer-navigation ul {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #323232;
+  
+  background-color: #f7f6f0;
+}
+
+.sub-menu,
+.search-form,
+.login-form,
+.modal
+{
+  display: none;
+}
+
+.phone {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.phone span {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.title{
+  font-size: 24px;
+  line-height: 30px;	
+}
+
+.about {
+  background-color: #e7d8b8;
+  background-image: url(../img/about-background.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.about .title{
+  font-weight: 500;	
+}
+
+.about-features {
+  list-style: none;	
+}
+
+.blog {
+  background-color: #ffffff;
+  background-image: url(../img/blog-background.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.blog-title a {
+  font-weight: 700;
+  color: #323232;
+}
+
+.subscribe {
+  color: #5a5a5a;  
+  
+  background-color: #f8f7f4;
+  background-image: url(../img/subscribe-background.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;	
+}
+
+.address-contacts {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+    
+  background-color: #fefefe;
+}
+
+.address-contacts span {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.btn {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  text-align: center;
+  color: #fefefe;
+  vertical-align: middle;
+  text-decoration: none;
+  
+  background-image: linear-gradient(to top,#ca3824 0%,#f26843 100%);
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  box-shadow: 0 2px 2px rgba(85,8,0,.54);
+}
+
+.btn:hover {
+  background-image: linear-gradient(to top,#ec6e5d 0%,#f58669 100%);
+}
+
+.btn:active {
+  background-image: linear-gradient(to top,#e1613e 0%,#d74531 100%);
+}
+
+.social a,
+.footer-navigation a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer-copyright,
+.footer-copyright a{
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+}

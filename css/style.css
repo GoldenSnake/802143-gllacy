@@ -174,7 +174,18 @@ a {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
-  color: #ffffff; 
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,.2)
+}
+
+.main-footer a:hover,
+.main-footer a:focus,
+.main-footer a:active,
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+    color: #ffbc9e
 }
 
 .page-title {

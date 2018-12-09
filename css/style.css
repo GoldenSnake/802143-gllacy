@@ -179,9 +179,9 @@ a {
   border-bottom: 1px solid rgba(255,255,255,.2)
 }
 
-.main-footer a:hover,
-.main-footer a:focus,
-.main-footer a:active,
+.footer a:hover,
+.footer a:focus,
+.footer a:active,
 .breadcrumbs a:hover,
 .breadcrumbs a:focus,
 .breadcrumbs a:active {

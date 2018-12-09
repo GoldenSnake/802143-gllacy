@@ -51,7 +51,8 @@ a {
 .sub-menu,
 .search-form,
 .login-form,
-.modal
+.modal,
+.cart
 {
   display: none;
 }
@@ -160,4 +161,46 @@ a {
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
+}
+
+
+.breadcrumbs,
+.catalog-list {
+  list-style: none;
+}
+
+.breadcrumbs,
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff; 
+}
+
+.page-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  color: #ffffff; 
+}
+
+.catalog-list a,
+.catalog-item b {
+  color: #ffffff; 	
+}
+
+.catalog-list a {
+  font-weight: 500;
+}
+
+.catalog-item b {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.catalog-item span {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
 }

@@ -14,24 +14,24 @@
         <a class="header-logo">
           <img src="img/logo.svg" width="160" height="70" alt="Мороженое «Глейси»">
         </a>
-        <ul class="site-navigation">
+        <ul class="site-navigation page-list">
           <li>
-            <a href="catalog.html">Каталог</a>
-            <ul class="sub-menu">
-              <li><a href="#">Новинки</a></li>
-              <li><a href="inner.html">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
+            <a class="page-navigation" href="catalog.html">Каталог</a>
+            <ul class="sub-menu page-list hidden">
+              <li><a class="page-navigation" href="#">Новинки</a></li>
+              <li><a class="page-navigation" href="inner.html">Сливочное</a></li>
+              <li><a class="page-navigation" href="#">Щербеты</a></li>
+              <li><a class="page-navigation" href="#">Фруктовый лед</a></li>
+              <li><a class="page-navigation" href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li><a href="delivery.html">Доставка и оплата</a></li>
-          <li><a href="about.html">О Компании</a></li>
+          <li><a class="page-navigation" href="delivery.html">Доставка и оплата</a></li>
+          <li><a class="page-navigation" href="about.html">О Компании</a></li>
         </ul>
-        <ul class="user-navigation">
+        <ul class="user-navigation page-list">
           <li class="login-link">
-            <a class="search-btn" href="search.html">Поиск</a>
-            <div class="search-form"> 
+            <a class="search-btn page-navigation" href="search.html">Поиск</a>
+            <div class="search-form hidden"> 
               <form action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="user-search"><span>Что ищем?</span></label>
                 <input type="search" name="search" id="user-search" placeholder="Что ищем?">
@@ -39,8 +39,8 @@
             </div>
           </li>
           <li class="login-link">
-            <a class="login-btn" href="login.html">Вход</a>
-            <div class="login-form">
+            <a class="login-btn page-navigation" href="login.html">Вход</a>
+            <div class="login-form hidden">
               <form action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="user-login-email"><span>Электронная почта</span></label>
                 <input type="email" name="login-email" id="user-login-email" placeholder="Электронная почта">
@@ -54,7 +54,7 @@
               </div>
             </div>
           </li>
-          <li class="login-link"><a href="cart.html"><span class="visually-hidden">Корзина:</span>Пусто</a></li>
+          <li class="login-link"><a class="page-navigation" href="cart.html"><span class="visually-hidden">Корзина:</span>Пусто</a></li>
         </ul>
       </nav>
       <div class="phone"> 
@@ -93,11 +93,10 @@
         
         <section class="items">
           <h2 class="visually-hidden">Список популярных вкусов</h2>
-          <ul class="catalog-list">
+          <ul class="catalog-list page-list">
             <li class="catalog-item">
               <a href="catalog-item.html">    
-                <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              </a>
+                <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
               <b>310₽<span>/кг</span></b>
               <h3>
                 <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -105,8 +104,7 @@
             </li>
             <li class="catalog-item">
               <a href="catalog-item.html">    
-                <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-              </a>
+                <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></a>
               <b>380₽<span>/кг</span></b>
               <h3>
                 <a href="#">Сливочно-кофейное с кусочками шоколада</a>           
@@ -114,8 +112,7 @@
             </li>
             <li class="catalog-item">
               <a href="catalog-item.html">    
-                <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              </a>
+                <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
               <b>355₽<span>/кг</span></b>
               <h3>
                 <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>           
@@ -123,8 +120,7 @@
             </li>
             <li class="catalog-item">
               <a href="catalog-item.html">    
-                <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-              </a>
+                <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></a>
               <b>415₽<span>/кг</span></b>
               <h3>
                 <a href="#">Сливочное крем-брюле с карамельной подливкой</a>           
@@ -150,7 +146,7 @@
         
         <div class="subscribe">
           <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class="subscribe-form" action="index.html" method="post">
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="email">Электронная почта</label>
             <input type="email" name="subscribe-email" id="email" placeholder="Электронная почта" required="">
             <button class="btn" type="submit">Отправить</button>
@@ -179,19 +175,19 @@
       
       <footer class="footer">
           
-        <ul class="social">
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
+        <ul class="social page-list">
+          <li><a class="social-button page-link" href="#">Твиттер</a></li>
+          <li><a class="social-button page-link" href="#">Инстаграм</a></li>
+          <li><a class="social-button page-link" href="#">Фейсбук</a></li>
+          <li><a class="social-button page-link" href="#">Вконтакте</a></li>
         </ul>
                   
         <nav class="footer-navigation">
-          <ul>
-            <li><a href="info.html">Для поставщиков</a></li>
-            <li><a href="news.html">О производстве</a></li>
-            <li><a href="price.html">Наши документы</a></li>
-            <li><a href="catalog.html">Экологические стандарты</a></li>
+          <ul class="page-list">
+            <li><a class="page-link" href="info.html">Для поставщиков</a></li>
+            <li><a class="page-link" href="news.html">О производстве</a></li>
+            <li><a class="page-link" href="price.html">Наши документы</a></li>
+            <li><a class="page-link" href="catalog.html">Экологические стандарты</a></li>
           </ul>        
         </nav>
         
@@ -199,11 +195,11 @@
           <a href="https://htmlacademy.ru">
             <img src="img/logo-htmlacademy.svg" width="110" height="40" alt="HTML Academy">
           </a>
-          <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
+          <p>Сделано в <a class="nav-link" href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
         </div>
       </footer>
       
-      <section class="modal modal-feedback">
+      <section class="modal modal-feedback hidden">
         <h3>Мы обязательно вам ответим!</h3>
         <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
         <form action="https://echo.htmlacademy.ru" method="post">          

@@ -22,34 +22,24 @@ body {
   font-weight: 500;
 }
 
-.site-navigation,
-.sub-menu,
-.user-navigation,
-.social,
-.footer-navigation ul {
+.page-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.site-navigation a,
-.user-navigation a {
+.page-navigation {
   color: #ffffff;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.page-navigation:hover,
+.page-navigation:focus {
   color: #323232;
   
   background-color: #f7f6f0;
 }
 
-.sub-menu,
-.search-form,
-.login-form,
-.modal,
-.cart
-{
+.hidden {
   display: none;
 }
 
@@ -82,6 +72,8 @@ body {
 }
 
 .about-features {
+  padding: 0;
+  margin: 0;
   list-style: none;	
 }
 
@@ -101,7 +93,6 @@ body {
   color: #5a5a5a;  
   
   background-color: #f8f7f4;
-  background-image: url(../img/subscribe-background.jpg);
   background-position: 0 0;
   background-repeat: repeat;	
 }
@@ -125,9 +116,7 @@ body {
   line-height: 24px;
   font-weight: 700;
 
-  text-align: center;
   color: #fefefe;
-  vertical-align: middle;
   text-decoration: none;
   
   background-image: linear-gradient(to top,#ca3824 0%,#f26843 100%);
@@ -145,11 +134,19 @@ body {
   background-image: linear-gradient(to top,#e1613e 0%,#d74531 100%);
 }
 
-.social a,
-.footer-navigation a {
+.page-link {
   font-size: 13px;
   line-height: 18px;
   color: #ffffff;
+}
+
+.page-link:hover,
+.page-link:focus,
+.page-link:active,
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color: #ffbc9e;
 }
 
 .footer-copyright,
@@ -157,12 +154,6 @@ body {
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
-}
-
-
-.breadcrumbs,
-.catalog-list {
-  list-style: none;
 }
 
 .breadcrumbs,
@@ -175,15 +166,6 @@ body {
   border-bottom: 1px solid rgba(255,255,255,.2)
 }
 
-.footer a:hover,
-.footer a:focus,
-.footer a:active,
-.breadcrumbs a:hover,
-.breadcrumbs a:focus,
-.breadcrumbs a:active {
-    color: #ffbc9e
-}
-
 .page-title {
   font-size: 35px;
   line-height: 41px;
@@ -191,23 +173,21 @@ body {
   color: #ffffff; 
 }
 
-.catalog-list a,
-.catalog-item b {
-  color: #ffffff; 	
-}
-
-.catalog-list a {
-  font-weight: 500;
-}
-
-.catalog-item b {
+.price {
   font-size: 45px;
-  line-height: 45px;
+  line-height: 1;
   font-weight: 700;
+  color: #ffffff;
 }
 
-.catalog-item span {
+.mass {
   font-size: 30px;
   line-height: 45px;
-  font-weight: 700;
+}
+
+.catalog-link {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #ffffff;
 }

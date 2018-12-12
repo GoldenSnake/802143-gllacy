@@ -17,6 +17,14 @@ body {
   width: 1146px;
 }
 
+.page-list {
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -46,14 +54,6 @@ body {
   align-items: center;
   
   font-weight: 500;
-}
-
-.page-list {
-/*
-  margin: 0;
-  padding: 0;
-*/
-  list-style: none;
 }
 
 .page-navigation {
@@ -88,11 +88,64 @@ body {
   line-height: 30px;	
 }
 
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.column {
+  width: 560px;
+  border-radius: 15px;
+}
+
+.promo-item {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  
+}
+
+.promo-item h2 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.promo-raspberry {
+  background: #772033;
+  background-image: url(../img/raspberry-background.jpg)
+}
+.promo-chocolate {
+  background: #3f261b;
+  background-image: url(../img/chocolate-background.jpg)
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item {
+  width: 267px;
+  text-align: center; 
+}
+
+.catalog-item img {
+  border-radius: 50%;
+}
+
 .about {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  margin-bottom: 40px;
+  
   background-color: #e7d8b8;
   background-image: url(../img/about-background.jpg);
   background-position: 0 0;
   background-repeat: repeat;
+  border-radius: 15px;
 }
 
 .about .title{
@@ -102,8 +155,17 @@ body {
 .about-features {
   padding: 0;
   margin: 0;
-  list-style: none;	
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
 }
+
+.about-feature {
+  padding-bottom: 10px;
+  width: 490px;
+}
+
 
 .blog {
   background-color: #ffffff;
@@ -126,11 +188,14 @@ body {
 }
 
 .address-contacts {
+  width: 302px;
+  
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
     
   background-color: #fefefe;
+  border-radius: 15px;
 }
 
 .address-contacts span {
@@ -176,6 +241,32 @@ body {
 .nav-link:active {
   color: #ffbc9e;
 }
+
+.footer {
+  margin-left: 27px;
+  display: flex;
+  justify-content: space-between;
+  width: 1146px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  width: 267px;
+}
+
+.footer-navigation {
+  display: flex;
+}
+
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 560px;
+}
+
 
 .footer-copyright,
 .footer-copyright a{

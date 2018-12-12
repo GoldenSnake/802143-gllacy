@@ -11,20 +11,48 @@ body {
   background-color: #849d8f;
 }
 
+.container {
+  margin-left: 27px; 
+  margin-top: 9px;
+  width: 1146px;
+}
+
 .navigation {
+  display: flex;
+  justify-content: space-between;
+  
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
 }
 
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  margin-left: 23px;
+  margin-bottom: 7px;
+  width: 680px;
+  display: flex;
+  align-items: center;
+}
+
+.page-navigation {
+  margin-right: 30px;
+}
+
 .user-navigation {
+  display: flex;
+  align-items: center;
+  
   font-weight: 500;
 }
 
 .page-list {
+/*
   margin: 0;
   padding: 0;
+*/
   list-style: none;
 }
 
@@ -50,7 +78,7 @@ body {
   color: #ffffff;
 }
 
-.phone span {
+.number {
   font-size: 22px;
   line-height: 24px;
 }
@@ -163,7 +191,7 @@ body {
   font-weight: 400;
   color: #ffffff;
   text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,.2)
+  border-bottom: 1px solid rgba(255,255,255,0.2)
 }
 
 .page-title {

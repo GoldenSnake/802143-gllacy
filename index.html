@@ -17,12 +17,12 @@
         <ul class="site-navigation page-list">
           <li>
             <a class="page-navigation" href="catalog.html">Каталог</a>
-            <ul class="sub-menu page-list hidden">
-              <li><a class="page-navigation" href="#">Новинки</a></li>
-              <li><a class="page-navigation" href="inner.html">Сливочное</a></li>
-              <li><a class="page-navigation" href="#">Щербеты</a></li>
-              <li><a class="page-navigation" href="#">Фруктовый лед</a></li>
-              <li><a class="page-navigation" href="#">Мелорин</a></li>
+            <ul class="sub-menu page-list">
+              <li class="line"><a class="sub-menu-link" href="#">Новинки</a></li>
+              <li><a class="sub-menu-link" href="inner.html">Сливочное</a></li>
+              <li><a class="sub-menu-link" href="#">Щербеты</a></li>
+              <li><a class="sub-menu-link" href="#">Фруктовый лед</a></li>
+              <li><a class="sub-menu-link" href="#">Мелорин</a></li>
             </ul>
           </li>
           <li><a class="page-navigation" href="delivery.html">Доставка и оплата</a></li>
@@ -66,25 +66,32 @@
         <h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>
         
         <div class="slider">
-          <div class="slide slide-1">
-            <img class="promo-image" src="img/slider-1.png" width="1045" height="881" alt="Рожок шоколадный пломбир и рожок с лимонным сорбетом">
-            <div class="promo-wrapper">
+          <div class="slide slide-one">
+            <div class="slide-content">
               <p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
               <a href="#" class="btn btn-slider">Давайте оба!</a>
             </div>
+            <img class="promo-image" src="img/slider-1.png" width="1045" height="881" alt="Рожок шоколадный пломбир и рожок с лимонным сорбетом">
           </div>
-          <div class="slide hidden">
-            <p>Шоколадный пломбир и лимонный сорбет</p>
-            <a href="#" class="btn btn-slider">Давайте оба!</a>
+          <div class="slide slide-two hidden">
+            <div class="slide-content">
+              <p>Шоколадный пломбир и лимонный сорбет</p>
+              <a href="#" class="btn btn-slider">Давайте оба!</a>
+            </div>
           </div>
-          <div class="slide hidden">
-            <p>Пломбир с помадкой и клубничный щербет</p>
-            <a href="#" class="btn btn-slider">Давайте оба!</a>
+          <div class="slide slide-three hidden">
+            <div class="slide-content">
+              <p>Пломбир с помадкой и клубничный щербет</p>
+              <a href="#" class="btn btn-slider">Давайте оба!</a>
+            </div>  
           </div>
-          <div class="promo-slider-controls">
-            <span class="slide-btn-1"></span>
-            <span class="slide-btn-2"></span>
-            <span class="slide-btn-3"></span>
+          <div class="slider-radio">
+            <input class="hidden" type="radio" id="slide-btn-1" name="slider-btn-1" checked>
+            <label class="radio-btn" for="slide-btn-2"></label>
+            <input class="hidden" type="radio" id="slide-btn-2" name="slider-btn-1">
+            <label class="radio-btn" for="slide-btn-2"></label>
+            <input class="hidden" type="radio" id="slide-btn-3" name="slider-btn-1">
+            <label class="radio-btn" for="slide-btn-3"></label>
           </div>
         </div>
         

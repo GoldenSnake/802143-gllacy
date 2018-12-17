@@ -10,12 +10,23 @@ body {
   
   background-color: #849d8f;
 }
+.visually-hidden:not(:focus):not(:active), input[type='checkbox'].visually-hidden, input[type='radio'].visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    white-space: nowrap;
+    border: 0;
+    clip-path: inset(100%);
+}
 
 .container {
-  margin-left: auto;
-  margin-right: auto; 
-  margin-top: 9px;
-  width: 1146px;
+  margin: 0 auto;
+  width: 1140px;
+  padding: 15px;
 }
 
 .page-list {
@@ -49,6 +60,11 @@ body {
   background-image: linear-gradient(to top,#e1613e 0%,#d74531 100%);
 }
 
+.header {
+  position: relative;
+  z-index: 10;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -64,7 +80,7 @@ body {
   padding: 0;
   margin-left: 23px;
   margin-bottom: 7px;
-  width: 680px;
+  min-width: 680px;
   display: flex;
   align-items: center;
 }
@@ -96,9 +112,9 @@ body {
 }
 
 .phone {
-  float: right;
+  text-align: right;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 20px;
   font-weight: 700;
   color: #ffffff;
 }
@@ -114,30 +130,51 @@ body {
 }
 
 .slider {
+  margin: 0 auto;
+  max-width: 700px;
   position: relative;
-  left: 276px;
-  width: 700px;
+  z-index: 9;
+  top: -150px;
 }
 
-.slide {
+.promo-wrapper {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -488px;
+}
+
+.slide-1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3px;
+  align-items: center;
 }
 
 .slide-title {
-  position: absolute;
-  top: 250px;
+  margin: 0;
+  padding: 0;
+  width: 671px;
+  
   font-size: 60px;
   line-height: 1;
   font-weight: 700;
   color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .btn-slider {
-  position: relative;
-  top: -120px;
-  left: 230px;
+  padding-top: 8px;
+  padding-right: 42px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  
   font-size: 32px;
   line-height: 44px;
+  border-radius: 33px;
 }
 
 .wrapper {
@@ -147,8 +184,14 @@ body {
 }
 
 .column {
-  width: 560px;
+  flex-basis: 560px;
   border-radius: 15px;
+}
+
+.promotion {
+  position: relative;
+  z-index: 10;
+  margin-top: -607px;
 }
 
 .promo-item {

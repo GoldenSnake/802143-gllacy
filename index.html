@@ -29,8 +29,8 @@
           <li><a class="page-navigation" href="about.html">О Компании</a></li>
         </ul>
         <ul class="user-navigation page-list">
-          <li class="login-link">
-            <a class="search-btn page-navigation" href="search.html">Поиск</a>
+          <li class="login-link search-item">
+            <a class="search-btn page-navigation" href="search.html"><span>Поиск</span></a>
             <div class="search-form hidden"> 
               <form action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="user-search"><span>Что ищем?</span></label>
@@ -66,12 +66,20 @@
         <h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>
         
         <div class="slider">
+          <div class="slider-radio">
+            <input class="hidden" type="radio" id="slide-btn-1" name="slider-btn-1" checked>
+            <label class="radio-btn" for="slide-btn-2"></label>
+            <input class="hidden" type="radio" id="slide-btn-2" name="slider-btn-1">
+            <label class="radio-btn" for="slide-btn-2"></label>
+            <input class="hidden" type="radio" id="slide-btn-3" name="slider-btn-1">
+            <label class="radio-btn" for="slide-btn-3"></label>
+          </div>          
           <div class="slide slide-one">
             <div class="slide-content">
               <p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
               <a href="#" class="btn btn-slider">Давайте оба!</a>
             </div>
-            <img class="promo-image" src="img/slider-1.png" width="1045" height="881" alt="Рожок шоколадный пломбир и рожок с лимонным сорбетом">
+            <img class="promo-image" src="img/slider-1.png" alt="Рожок шоколадный пломбир и рожок с лимонным сорбетом">
           </div>
           <div class="slide slide-two hidden">
             <div class="slide-content">
@@ -84,14 +92,6 @@
               <p>Пломбир с помадкой и клубничный щербет</p>
               <a href="#" class="btn btn-slider">Давайте оба!</a>
             </div>  
-          </div>
-          <div class="slider-radio">
-            <input class="hidden" type="radio" id="slide-btn-1" name="slider-btn-1" checked>
-            <label class="radio-btn" for="slide-btn-2"></label>
-            <input class="hidden" type="radio" id="slide-btn-2" name="slider-btn-1">
-            <label class="radio-btn" for="slide-btn-2"></label>
-            <input class="hidden" type="radio" id="slide-btn-3" name="slider-btn-1">
-            <label class="radio-btn" for="slide-btn-3"></label>
           </div>
         </div>
         
@@ -149,26 +149,28 @@
         <article class="about">
           <h2 class="title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
           <ul class="about-features page-list">
-            <li class="about-feature">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-            <li class="about-feature">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-            <li class="about-feature">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-            <li class="about-feature">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
+            <li class="about-feature first-feature">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+            <li class="about-feature second-feature">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+            <li class="about-feature third-feature">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+            <li class="about-feature fourth-feature">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
           </ul>
         </article>
           
         <div class="wrapper">
           <article class="blog column">
             <p>Новое в нашем блоге</p>
-            <h2 class="title blog-title"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h2>
+            <h2 class="blog-title"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h2>
           </article>
 
           <div class="subscribe column">
-            <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-              <label class="visually-hidden" for="email">Электронная почта</label>
-              <input type="email" name="subscribe-email" id="email" placeholder="Электронная почта" required="">
-              <button class="btn" type="submit">Отправить</button>
-            </form>
+            <div class="bg-wrapper">
+              <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+              <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="email">Электронная почта</label>
+                <input type="email" name="subscribe-email" id="email" placeholder="Электронная почта" required="">
+                <button class="btn" type="submit">Отправить</button>
+              </form>
+            </div>
           </div>
         </div>   
     </main>

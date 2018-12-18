@@ -337,12 +337,21 @@ body {
 }
 
 .catalog-item {
+  position: relative;
   width: 267px;
   text-align: center; 
 }
 
 .catalog-item img {
   border-radius: 50%;
+}
+
+.catalog-item::before {
+  position: absolute;
+  height: 61px;
+  width: 61px;
+  content: '';
+  background-image: url(../img/hit.svg);
 }
 
 .about {
@@ -487,6 +496,14 @@ body {
 }
 
 .address-contacts {
+  box-sizing: border-box;
+  margin: 0;
+  padding-top: 28px;
+  padding-right: 25px;
+  padding-bottom: 31px;
+  padding-left: 25px;
+
+  
   position: absolute;
   left: 868px;
   top: 62px;
@@ -499,6 +516,12 @@ body {
     
   background-color: #fefefe;
   border-radius: 15px;
+}
+
+.address-contacts p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
 }
 
 .address-contacts span {

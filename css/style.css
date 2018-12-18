@@ -328,6 +328,10 @@ body {
   background-image: url(../img/chocolate-background.jpg)
 }
 
+.items {
+  margin-bottom: 40px;
+}
+
 .catalog-list {
   margin: 0;
   padding: 0;
@@ -337,13 +341,21 @@ body {
 }
 
 .catalog-item {
+  margin: 5px;
   position: relative;
   width: 267px;
   text-align: center; 
 }
 
 .catalog-item img {
+  margin: 0;
+  padding: 0;
   border-radius: 50%;
+}
+
+.catalog-item h3 {
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-item::before {
@@ -352,6 +364,37 @@ body {
   width: 61px;
   content: '';
   background-image: url(../img/hit.svg);
+}
+
+.catalog-item .price {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 55px;
+  left: 2px;
+}
+
+.catalog-item:hover>.catalog-btn-wrapper {
+  display: flex;
+}
+
+.catalog-btn-wrapper {
+  position: absolute; 
+  top: -5px;
+  right: -15px;
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+  min-width: 295px;
+  min-height: 405px;
+  border-radius: 5px;
+  background-color: rgba(248, 247, 244, 0.2);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.08);
+}
+
+.catalog-btn {
+ position: absolute;
+ bottom: 22px;
 }
 
 .about {
@@ -612,6 +655,8 @@ body {
 }
 
 .catalog-link {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;

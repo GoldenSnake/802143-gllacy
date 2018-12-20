@@ -30,9 +30,9 @@
         </ul>
         <ul class="user-navigation page-list">
           <li class="login-link search-item">
-            <a class="search-btn page-navigation" href="search.html"><span>Поиск</span></a>
-            <div class="search-form hidden"> 
-              <form action="https://echo.htmlacademy.ru" method="post">
+            <a class="search-btn page-navigation" href="search.html"><span class="visually-hidden">Поиск</span></a>
+            <div class="search-form"> 
+              <form class="search" action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="user-search"><span>Что ищем?</span></label>
                 <input type="search" name="search" id="user-search" placeholder="Что ищем?">
               </form>
@@ -40,21 +40,23 @@
           </li>
           <li class="login-link">
             <a class="login-btn page-navigation" href="login.html">Вход</a>
-            <div class="login-form hidden">
-              <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="login-form">
+              <form class="login" action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="user-login-email"><span>Электронная почта</span></label>
                 <input type="email" name="login-email" id="user-login-email" placeholder="Электронная почта">
                 <label class="visually-hidden" for="user-login-password"><span>Пароль</span></label>
                 <input type="password" name="login-password" id="user-login-password" placeholder="Пароль">
-                <button class="btn" type="submit" value="Войти">Войти</button>
+                <div class="login-wrapper">
+                  <button class="btn" type="submit" value="Войти">Войти</button>
+                  <div class="login-links">
+                    <a href="">Забыли пароль?</a>
+                    <a href="">Новая регистрация</a>
+                  </div>
+                </div>
               </form>
-              <div class="login-links">
-                <a href="">Забыли пароль?</a>
-                <a href="">Новая регистрация</a>
-              </div>
             </div>
           </li>
-          <li class="login-link"><a class="page-navigation" href="cart.html"><span class="visually-hidden">Корзина:</span>Пусто</a></li>
+          <li class="login-link"><a class="page-navigation cart-btn" href="cart.html"><span class="visually-hidden">Корзина:</span>Пусто</a></li>
         </ul>
       </nav>
       <div class="phone"> 

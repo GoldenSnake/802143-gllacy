@@ -25,8 +25,9 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1140px;
+  width: 1146px;
   padding: 15px;
+  padding-top: 10px;
 }
 
 .page-list {
@@ -99,7 +100,8 @@ body {
 
 .page-navigation {
   display: block;
-  padding: 7px 13px 9px 14px;
+  padding: 7px 14px 9px 14px;
+  min-height: 17px;
   color: #ffffff;
 }
 
@@ -145,33 +147,132 @@ body {
 }
 
 .line::after {  
-    position: absolute;
-    right: 10px;
-    left: 5px;
-    height: 1px;
-    content: "";
-    background-color: rgba(53, 53, 53, 0.2);
+  position: absolute;
+  right: 10px;
+  left: 5px;
+  height: 1px;
+  content: "";
+  background-color: rgba(53, 53, 53, 0.2);
 }
 
 .login-link {
-  margin-left: 5px;
-  position: relative;  
+  padding: 0;
+  margin: 0;
+  min-height: 33px;
+  min-width: 33px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  position: relative; 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
 }
 
+.login-link:hover .login-form,
+.login-link:hover .search-form {
+  display: block;
+}
+
+.login-link a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
 .search-btn::before {
-    position: absolute;
-    top: 7px;
-    left: 8px;
-    width: 17px;
-    height: 17px;
-    content: '';
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  width: 17px;
+  height: 17px;
+  content: "";
   background-image: url(../img/loupe.svg);
+  background-repeat: no-repeat;
+}
+
+.search-btn:hover::before {
+  background-image: url(../img/loupe-black.svg);
+  background-repeat: no-repeat;
+}
+
+.search-form {  
+  margin: 0;
+  padding: 20px 15px;
+  position: absolute;
+  top: 36px;
+  right: 1px;
+  display: none;
+  border-radius: 5px;
+  background-color: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.search input {
+  margin: 0;
+  padding: 0;
+  padding-left: 14px;
+  box-sizing: border-box;
+  min-width: 311px;
+  min-height: 44px;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.login-form {
+  position: absolute;
+  top: 36px;
+  right:  1px;
+  display: none;
+  padding-top: 20px;
+  padding-right: 17px;
+  padding-bottom: 22px;
+  padding-left: 19px;
+  
+  border-radius: 5px;
+  background-color: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.login input {
+  padding: 0;
+  padding-left: 14px;
+  margin: 0;
+  margin-bottom: 21px;
+  box-sizing: border-box;
+  height: 44px;
+  width: 241px; 
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.login .btn {
+  padding: 10px 25px;
+  min-width: 100px;
+  min-height: 44px;
+  border-radius: 20px;
+}
+
+.login-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.login-links {
+  margin-left: 20px;
+}
+
+.login-links a {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #323232;
 }
 
 .login-btn {
-  padding-left: 44px; 
+  padding-left: 46px; 
 }
 
 .login-btn::before {
@@ -180,8 +281,31 @@ body {
   left: 15px;
   width: 21px;
   height: 19px;
-  content: '';
+  content: "";
+  background-image: url(../img/enter.svg);
+}
+
+.login-btn:hover::before {
   background-image: url(../img/entrance.svg);
+}
+
+.cart-btn {
+  padding-left: 46px;
+}
+
+.cart-btn::before {
+  position: absolute;
+  left: 16px;
+  top: 6px;
+  width: 21px;
+  height: 20px;
+  content: "";
+  background-image: url(../img/basket.svg);
+  background-repeat: no-repeat;
+}
+
+.cart-btn:hover::before {
+  background-image: url(../img/basket-black.svg);
 }
 
 .phone {
@@ -190,6 +314,11 @@ body {
   line-height: 20px;
   font-weight: 700;
   color: #ffffff;
+}
+
+.phone p {
+  margin: 0;
+  padding: 0;
 }
 
 .number {
@@ -210,7 +339,7 @@ body {
 }
 
 .slide-content {
-  bottom: 40px;
+  bottom: 45px;
   z-index: 10;  
   position: absolute;
   text-align: center;
@@ -219,7 +348,7 @@ body {
 .slide-one,
 .slide-two,
 .slide-three {
-  margin-top: 100px;
+  margin-top: 118px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,6 +360,7 @@ body {
 
 .slide-title {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   width: 671px;
   
@@ -238,7 +368,6 @@ body {
   line-height: 1;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -247,7 +376,7 @@ body {
   padding-right: 42px;
   padding-bottom: 12px;
   padding-left: 40px;
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 32px;
   line-height: 44px;
   border-radius: 33px;

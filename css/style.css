@@ -542,7 +542,8 @@ body {
   justify-content: space-between;
 }
 
-.catalog-item {
+.catalog-item,
+.product {
   margin: 0;
   padding: 0;
   position: relative;
@@ -550,11 +551,17 @@ body {
   text-align: center; 
 }
 
-.catalog-item img {
+.product {
+  margin-bottom: 36px;
+}
+
+.catalog-item img,
+.product img {
   border-radius: 50%;
 }
 
-.catalog-item h3 {
+.catalog-item h3,
+.product h3 {
   margin: 0;
   padding: 0;
 }
@@ -567,7 +574,8 @@ body {
   background-image: url(../img/hit.svg);
 }
 
-.catalog-item .price {
+.catalog-item .price,
+.product .price {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -590,7 +598,8 @@ body {
   min-height: 405px;
   border-radius: 5px;
   background-color: rgba(248, 247, 244, 0.2);
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  z-index: 5;
 }
 
 .catalog-btn {

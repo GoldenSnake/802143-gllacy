@@ -49,7 +49,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1146px;
+  width: 1147px;
   padding: 15px;
   padding-top: 10px;
 }
@@ -513,7 +513,7 @@ body {
 }
 
 .items {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .catalog-list {
@@ -553,7 +553,7 @@ body {
   margin: 0;
   padding: 0;
   position: absolute;
-  bottom: 68px;
+  bottom: 66px;
   left: 0;
 }
 
@@ -583,21 +583,22 @@ body {
 .about {
   padding: 0;
   margin: 0;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 8px;
+  padding-right: 11px;
   padding-top: 5px;
   margin-bottom: 40px;
-  min-height: 307px;
+  min-height: 301px;
   
   background-color: #e7d8b8;
   background-image: url(../img/about-background.jpg);
-  background-position: 0 0;
+  background-position: 12px 0;
   background-repeat: repeat;
   border-radius: 15px;
 }
 
 .about .title{
-  font-weight: 500;	
+  margin-left: 12px;
+  font-weight: 600;	
 }
 
 .about-features {
@@ -612,8 +613,8 @@ body {
 .about-feature {
   padding-left: 57px;
   position: relative;
-  padding-bottom: 20px;
-  max-width: 490px;
+  padding-bottom: 23px;
+  max-width: 484px;
 }
 
 .about-feature::before {
@@ -661,6 +662,12 @@ body {
   padding: 0;
 }
 
+.blog-title {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+}
+
 .blog-title a {
   margin: 0;
   padding: 0;
@@ -679,10 +686,10 @@ body {
  }
 
 .bg-wrapper {
-  padding-top: 30px;
-  padding-right: 15px;
+  padding-top: 28px;
+  padding-right: 22px;
   padding-bottom: 35px;
-  padding-left: 22px;
+  padding-left: 20px;
   border-radius: 15px;
   background-color: #f8f7f4;
 }
@@ -708,9 +715,9 @@ body {
 
 .subscribe-form .btn {
   padding-top: 9px;
-  padding-right: 18px;
+  padding-right: 16px;
   padding-bottom: 11px;
-  padding-left: 21px;
+  padding-left: 16px;
   border-radius: 24px;
 }
 

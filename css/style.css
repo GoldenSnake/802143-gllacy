@@ -51,7 +51,8 @@ body {
 .container {
   margin: 0 auto;
   width: 1147px;
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 10px;
 }
 
@@ -722,27 +723,23 @@ body {
   border-radius: 24px;
 }
 
-.address {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .address-contacts {
   box-sizing: border-box;
   margin: 0;
+  margin-top: 50px;
   padding-top: 28px;
   padding-right: 25px;
   padding-bottom: 31px;
   padding-left: 25px;
-
-  
-  position: absolute;
-  left: 868px;
-  top: 62px;
-  width: 302px;
+  min-width: 302px;
   min-height: 305px;
+  z-index: 2;
   
   font-size: 14px;
   line-height: 20px;
@@ -764,6 +761,19 @@ body {
   font-weight: 700;
 }
 
+
+.map {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.map-pic {
+  position: absolute;
+  top: 0px;
+}
+
+
 .page-link {
   font-size: 13px;
   line-height: 18px;
@@ -780,7 +790,7 @@ body {
 }
 
 .footer {
-  margin-top: 20px;
+  margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
   display: flex;

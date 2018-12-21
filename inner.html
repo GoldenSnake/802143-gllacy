@@ -11,28 +11,28 @@
     <main class="container">
       <header class="header">
         <nav class="navigation">
-          <a class="header-logo" href="index.html">
-            <img src="img/logo.svg" width="160" height="70" alt="Мороженое «Глейси»">
+          <a class="header-logo">
+            <img src="img/logo.svg" width="154" height="64" alt="Мороженое «Глейси»">
           </a>
           <ul class="site-navigation page-list">
-            <li class="site-navigation-active">
+            <li>
               <a class="page-navigation" href="catalog.html">Каталог</a>
-              <ul class="sub-menu page-list hidden">
-                <li><a class="page-navigation" href="#">Новинки</a></li>
-                <li><a class="page-navigation" href="inner.html">Сливочное</a></li>
-                <li><a class="page-navigation" href="#">Щербеты</a></li>
-                <li><a class="page-navigation" href="#">Фруктовый лед</a></li>
-                <li><a class="page-navigation" href="#">Мелорин</a></li>
-            </ul>
+              <ul class="sub-menu page-list">
+                <li class="line"><a class="sub-menu-link" href="#">Новинки</a></li>
+                <li><a class="sub-menu-link" href="inner.html">Сливочное</a></li>
+                <li><a class="sub-menu-link" href="#">Щербеты</a></li>
+                <li><a class="sub-menu-link" href="#">Фруктовый лед</a></li>
+                <li><a class="sub-menu-link" href="#">Мелорин</a></li>
+              </ul>
             </li>
             <li><a class="page-navigation" href="delivery.html">Доставка и оплата</a></li>
             <li><a class="page-navigation" href="about.html">О Компании</a></li>
           </ul>
           <ul class="user-navigation page-list">
-            <li class="login-link">
-              <a class="search-btn page-navigation" href="search.html">Поиск</a>
-              <div class="search-form hidden"> 
-                <form action="https://echo.htmlacademy.ru" method="post">
+            <li class="login-link search-item">
+              <a class="search-btn page-navigation" href="search.html"><span class="visually-hidden">Поиск</span></a>
+              <div class="search-form"> 
+                <form class="search" action="https://echo.htmlacademy.ru" method="post">
                   <label class="visually-hidden" for="user-search"><span>Что ищем?</span></label>
                   <input type="search" name="search" id="user-search" placeholder="Что ищем?">
                 </form>
@@ -40,18 +40,20 @@
             </li>
             <li class="login-link">
               <a class="login-btn page-navigation" href="login.html">Вход</a>
-              <div class="login-form hidden">
-                <form action="https://echo.htmlacademy.ru" method="post">
+              <div class="login-form">
+                <form class="login" action="https://echo.htmlacademy.ru" method="post">
                   <label class="visually-hidden" for="user-login-email"><span>Электронная почта</span></label>
                   <input type="email" name="login-email" id="user-login-email" placeholder="Электронная почта">
                   <label class="visually-hidden" for="user-login-password"><span>Пароль</span></label>
                   <input type="password" name="login-password" id="user-login-password" placeholder="Пароль">
-                  <button class="btn" type="submit" value="Войти">Войти</button>
+                  <div class="login-wrapper">
+                    <button class="btn" type="submit" value="Войти">Войти</button>
+                    <div class="login-links">
+                      <a href="">Забыли пароль?</a>
+                      <a href="">Новая регистрация</a>
+                    </div>
+                  </div>
                 </form>
-                <div class="login-links">
-                  <a href="">Забыли пароль?</a>
-                  <a href="">Новая регистрация</a>
-                </div>
               </div>
             </li>
             <li class="login-link">
@@ -223,16 +225,16 @@
       
       <footer class="footer">
           
-       <ul class="social page-list">
-          <li><a class="social-button page-link" href="#">Твиттер</a></li>
-          <li><a class="social-button page-link" href="#">Инстаграм</a></li>
-          <li><a class="social-button page-link" href="#">Фейсбук</a></li>
-          <li><a class="social-button page-link" href="#">Вконтакте</a></li>
+        <ul class="social page-list">
+          <li><a class="social-button page-link social-twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+          <li><a class="social-button page-link social-instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li><a class="social-button page-link social-facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button page-link social-vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
         </ul>
           
-        <nav class="footer-navigation page-list">
+        <nav class="footer-navigation">
           <ul class="footer-list page-list">
-            <li><a class="page-link" href="info.html">Для поставщиков</a></li>
+            <li class="heart"><a class="page-link" href="info.html">Для поставщиков</a></li>
             <li><a class="page-link" href="news.html">О производстве</a></li>
             <li><a class="page-link" href="price.html">Наши документы</a></li>
             <li><a class="page-link" href="catalog.html">Экологические стандарты</a></li>

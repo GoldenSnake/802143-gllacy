@@ -1458,3 +1458,105 @@ body {
   margin-top: 30px;
   padding-top: 20px;
 }
+
+/*
+.modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+}
+
+.visible {
+  display: block;
+}
+*/
+
+.modal {
+  position: fixed;
+  display: none;
+  color: #323232;
+  background-color: #f8f7f4;
+  top: 340px;
+  left: 50%;
+  margin-left: -235px;
+  width: 423px;
+  padding: 25px;
+  padding-top: 17px; 
+  border-radius: 10px;
+}
+
+.modal h3 {
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.modal-form input,
+.modal-form textarea {
+  box-sizing: border-box;
+  padding: 0;
+  padding-left: 14px;
+  margin-bottom: 20px;
+  font: inherit;
+  color: #323232;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.modal-form input {
+   height: 46px;
+  width: 267px;
+}
+
+.modal-form textarea {
+  padding-top: 12px;
+  margin-bottom: 25px;
+  width: 426px;
+}
+
+.modal-form .btn {
+ align-self: flex-end;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 18px;
+  height: 20px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::after, .modal-close::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 18px;
+  height: 3px;
+  background-color: #231f20;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}

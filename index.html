@@ -241,22 +241,24 @@
         </div>
       </footer>
       
-      <section class="modal modal-feedback hidden">
-        <h3>Мы обязательно вам ответим!</h3>
-        <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
-        <form action="https://echo.htmlacademy.ru" method="post">          
-          <label class="visually-hidden" for="user-feedback-name"><span>Как вас зовут?</span></label>  
-          <input type="text" name="feedback-name" id="user-feedback-name" placeholder="Как вас зовут?">
-                
-          <label class="visually-hidden" for="user-feedback-email"><span>Ваша почта для ответа?</span></label> 
-          <input type="email" name="feedback-email" id="user-feedback-email" placeholder="Ваша почта для ответа?">
-           
-          <label class="visually-hidden" for="user-feedback-text"><span>Напишите что-нибудь...</span></label> 
-          <textarea name="feedback-text" id="user-feedback-text" placeholder="Напишите что-нибудь..."></textarea>
-                            
-          <button class="btn">Отправить</button>
-        </form>
-      </section>
+      <div class="modal-mask visible">
+        <section class="modal modal-feedback">
+          <h3>Мы обязательно вам ответим!</h3>
+          <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+          <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">          
+            <label class="visually-hidden" for="user-feedback-name"><span>Как вас зовут?</span></label>  
+            <input type="text" name="feedback-name" id="user-feedback-name" placeholder="Как вас зовут?">
+
+            <label class="visually-hidden" for="user-feedback-email"><span>Ваша почта для ответа?</span></label> 
+            <input type="email" name="feedback-email" id="user-feedback-email" placeholder="Ваша почта для ответа?">
+
+            <label class="visually-hidden" for="user-feedback-text"><span>Напишите что-нибудь...</span></label> 
+            <textarea name="feedback-text" id="user-feedback-text" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+
+            <button class="btn">Отправить</button>
+          </form>
+        </section>
+      </div>
       </div>
     </body>
 </html>

@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   
-  font-family: "Roboto",Tahoma,sans-serif;
+  font-family: "Roboto", Tahoma, sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -21,6 +21,10 @@ body {
     white-space: nowrap;
     border: 0;
     clip-path: inset(100%);
+}
+
+.catalog-page-wrapper {
+  background-image: linear-gradient(to bottom,#9cb0a5 1%,#849d8f 40%);
 }
 
 .site-wrapper {
@@ -944,8 +948,19 @@ body {
   padding: 0;
 }
 
-.breadcrumbs {
+.info {
   display: flex;
+  justify-content: space-between;
+}
+
+.breadcrumbs {
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+}
+
+.breadcrumbs li {
+  padding-right: 7px;
 }
 
 .breadcrumbs,
@@ -956,9 +971,269 @@ body {
   color: #ffffff;
 }
 
+.filters {
+  margin-bottom: 25px;
+}
+
+.filters-form {
+  display: flex;
+  flex-direction: column;  
+}
+
+.filters-wrapper {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filters fieldset {
+  margin: 0;
+  margin-right: 15px;
+  padding: 0;
+  border: 0;
+}
+
+.filters legend {
+ margin-left: 15px;
+ margin-bottom: 7px;
+ font-size: 14px;
+ line-height: 16px;
+ color: #ffffff;
+}
+
+.filters-bg {
+  padding-top: 7px;
+  padding-right: 0;
+  padding-bottom: 7px;
+  padding-left: 12px;
+  background-color: rgba(255,255,255,0.3);
+  border: 0;
+  border-radius: 25px; 
+  color: #ffffff;
+}
+
+.selection {
+  position: relative;
+}
+
+.select::after {
+  content: "";
+  position: absolute;
+  top: 37px;
+  left: 166px;
+  width: 11px;
+  height: 10px;
+  background-image: url(../img/icon-down-dir.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 11px 10px;
+  z-index: 2;
+}
+
+.filters-sorting {
+  padding-right: 35px;
+  padding-top: 9px;
+  padding-left: 16px;
+  padding-bottom: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  z-index: 6;
+}
+
+.fat-list,
+.additive-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.additive-list .filter-option {
+  padding-left: 35px;
+  padding-right: 19px;
+}
+
+.fat-list .filter-option {
+  padding-left: 40px;
+  padding-right: 10px;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+  color: #ffffff;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 20px 20px;
+  opacity: 0.8;
+}
+
+.filter-input-checkbox:checked + label::before,
+ .filter-input-radio:checked + label::before {
+  display: none;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -33px;
+  width: 24px;
+  height: 20px;
+  
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 24px 20px;
+  opacity: 0.8;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+
+  position: absolute;
+  left: -33px;
+  top: -1px;
+  width: 22px;
+  height: 22px;
+  
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 22px 22px;
+  opacity: 0.8;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+  left: -33px;
+  top: -1px;
+  width: 24px;
+  height: 24px;
+
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 22px 22px;
+  opacity: 0.8;
+}
+
+.ranges {
+  position: relative;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 65px;
+  font-size: 14px;
+}
+
+.range {
+   color: rgba(255, 255, 255, 0.7);
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 0;
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  background-color: transparent;
+}
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 110px;
+  width: 7px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.range-controls {
+  position: relative;
+  padding-top: 17px;
+  padding-left: 21px;
+  padding-right: 21px;
+  box-sizing: border-box;
+  height: 37px;
+  width: 219px;  
+}
+
+.range-controls .scale { 
+  height: 5px;
+  width: 177px;
+  background: rgba(248, 247, 244, 0.5);
+}
+
+.range-controls .bar {
+  margin-left: 25px;
+  width: 97px;
+  height: 5px;
+  background: rgba(248, 247, 244, 1);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 20px;
+  height: 22px;
+  padding: 0;
+
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 20px 22px;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 35px;
+  top: 10px;
+}
+
+.range-controls .toggle-max {
+  left: 130px;
+  top: 10px;
+}
+
+.btn-filters {
+  padding: 8px 28px;
+  align-self: flex-end;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  color: #ffffff;
+  background-color: rgba(255,255,255,.2);
+  cursor: pointer;
+}
+
 .page-title {
+  margin-top: 0;
+  margin-bottom: 25px;
   font-size: 35px;
-  line-height: 41px;
+  line-height: 37px;
   font-weight: 700;
   color: #ffffff; 
 }
@@ -987,6 +1262,42 @@ body {
 }
 
 .pagination-list {
+  padding: 0;
+  margin: 0;
+  margin-top: 49px;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.pagination-item {
+  margin-left: 5px;
+}
+
+.pagination-item a {
+  padding: 3px 8px;
+  font-size: 16px;
+  line-height: 18px;
+  border: 0;
+  border-radius: 50%;
+  color: #ffffff;  
+  text-decoration: none;
+}
+
+.pagination-item a:focus,
+.pagination-item a:hover {
+  background-color: rgba(255,255,255,.4);
+}
+
+.pagination-item-active a {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.prev_page svg {
+  transform: rotate(180deg);
+}
+
+.pagination-item .next_page {
+  padding-right: 0;
 }

@@ -816,7 +816,7 @@ body {
   padding-left: 25px;
   min-width: 302px;
   min-height: 305px;
-  z-index: 2;
+  z-index: 5;
   
   font-size: 14px;
   line-height: 20px;
@@ -857,7 +857,7 @@ body {
 }
 
 .yandex-map {
-  z-index: 5;
+  z-index: 3;
 }
 
 
@@ -1564,7 +1564,7 @@ social-button:focus {
   position: fixed;
   color: #323232;
   background-color: #f8f7f4;
-  top: 340px;
+  top: 100px;
   left: 50%;
   margin-left: -235px;
   width: 423px;

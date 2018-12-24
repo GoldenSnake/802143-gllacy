@@ -847,12 +847,17 @@ body {
 .map {
   position: relative;
   margin: 0 auto;
-  width: 1200px;
 }
 
 .map-pic {
   position: absolute;
   top: 0px;
+  max-height: 430px;
+  width: 100%;
+}
+
+.yandex-map {
+  z-index: 5;
 }
 
 

@@ -232,6 +232,10 @@ body {
 }
 
 .sub-menu-link:active {
+  background-color: #d07058;
+}
+
+.sub-menu-active {
   background-color: #f6b5a5;
 }
 

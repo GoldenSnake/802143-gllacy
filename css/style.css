@@ -164,6 +164,21 @@ body {
           align-items: flex-start;
 }
 
+.site-navigation-item {
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.site-navigation-item:not(.active-item)::after {
+  content: "";
+  position: absolute;
+  right: 13px;
+  bottom: 15px;
+  left: 14px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .user-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,6 +194,7 @@ body {
   display: block;
   padding: 7px 14px 7px 14px;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .page-navigation:hover,
@@ -189,10 +205,6 @@ body {
   color: #323232;
   border-radius: 50px;
   background-color: #f7f6f3;
-}
-
-.site-navigation>li {
-  position: relative;
 }
 
 .sub-menu {
@@ -208,8 +220,8 @@ body {
   -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
           box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
-.site-navigation>li:hover .sub-menu,
-.site-navigation>li:focus-within .sub-menu {
+.site-navigation-item:hover .sub-menu,
+.site-navigation-item:focus-within .sub-menu {
   display: block;
   z-index: 10;
 }
@@ -259,17 +271,11 @@ body {
 }
 
 .login-link {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 0;
+  padding-bottom: 8px;
   margin: 0;
-  min-height: 33px;
-  min-width: 33px;
-  margin-left: 9px;
-  margin-bottom: 8px;
+  margin-top: 8px;
   position: relative; 
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50px;
 }
 
 .login-link:hover .login-form,
@@ -285,6 +291,16 @@ body {
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
+  
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 33px;
+  min-width: 33px;
+  margin-left: 9px;
+  margin-bottom: 8px;
+  position: relative; 
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
 }
 
 .search-btn::before {
@@ -506,19 +522,16 @@ body {
   position: absolute;
   bottom: 5px;
   left: 1px;
-  z-index: 20;
-  
+  z-index: 20;  
   font-size: 0;
 }
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 17px;
   height: 17px;
   margin-right: 8px;
-
-  vertical-align: top;
-
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -913,7 +926,7 @@ body {
   padding-right: 25px;
   padding-bottom: 31px;
   padding-left: 25px;
-  min-width: 302px;
+  max-width: 302px;
   min-height: 305px;
   z-index: 5;
   
@@ -926,12 +939,14 @@ body {
 }
 
 .address-contacts p {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   padding-bottom: 22px;
 }
 
-.address-contacts span {
+.big-address {
   font-size: 18px;
   line-height: 25px;
   font-weight: 700;
@@ -940,7 +955,7 @@ body {
 .address-contacts .btn {
   display: block;
   margin-top: 4px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 
 .map {
@@ -1007,6 +1022,7 @@ body {
 
 .social-button {
   display: inline-block;
+  vertical-align: top;
   width: 33px;
   height: 33px;
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -1234,7 +1250,14 @@ social-button:focus {
 }
 
 .breadcrumbs li {
-  padding-right: 7px;
+  padding-right: 17px;
+  position: relative;
+}
+
+.breadcrumbs-next::after {
+  content: "»";
+  position: absolute;
+  right: 5px;
 }
 
 .breadcrumbs,
@@ -1460,6 +1483,7 @@ social-button:focus {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 65px;
   font-size: 14px;
 }
@@ -1593,6 +1617,7 @@ social-button:focus {
 
 .catalog-link {
   display: inline-block;
+  vertical-align: top;
   margin: 0;
   padding: 0;
   padding-top: 8px;

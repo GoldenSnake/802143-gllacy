@@ -56,7 +56,6 @@ body {
 .site-wrapper::before,
 .site-wrapper::after {
   content: "";
-
   visibility: hidden;
 }
 
@@ -620,11 +619,13 @@ body {
 
 .promo-raspberry {
   background: #772033;
-  background-image: url(../img/raspberry-background.jpg)
+  background-image: url(../img/raspberry-background.jpg);
+  background-repeat: no-repeat;
 }
 .promo-chocolate {
   background: #3f261b;
-  background-image: url(../img/chocolate-background.jpg)
+  background-image: url(../img/chocolate-background.jpg);
+  background-repeat: no-repeat; 
 }
 
 .items {
@@ -674,6 +675,7 @@ body {
   width: 61px;
   content: '';
   background-image: url(../img/hit.svg);
+  background-repeat: no-repeat;
 }
 
 .catalog-item .price,
@@ -833,6 +835,7 @@ body {
   color: #5a5a5a;  
   background-color: #f8f7f4;
   background-image: url(../img/border-post.jpg);
+  background-repeat: no-repeat;
  }
 
 .bg-wrapper {
@@ -951,6 +954,7 @@ body {
 
 .yandex-map {
   z-index: 3;
+  border: 0;
 }
 
 
@@ -1128,10 +1132,12 @@ social-button:focus {
 
 .cart-full::before {
   background-image: url(../img/basket-red.svg);
+  background-repeat: no-repeat;
 }
 
 .cart-full:hover::before {
   background-image: url(../img/basket-red.svg);
+  background-repeat: no-repeat;
 }
 
 .close-btn {

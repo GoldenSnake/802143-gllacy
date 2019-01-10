@@ -191,13 +191,16 @@ body {
   background-color: #f7f6f3;
 }
 
+.site-navigation>li {
+  position: relative;
+}
+
 .sub-menu {
   margin: 0;
   margin-top: 5px;
   padding: 6px 0;
   position: absolute;
-  top: 45px;
-  left: 157px;
+  top: 33px;
   display: none;
   min-width: 143px;  
   border-radius: 5px;

@@ -1767,9 +1767,10 @@ social-button:focus {
 
 .modal-show {
   display: block;
-  
-  -webkit-animation: bounce 0.6s;
-  
+}
+
+.modal-animation {
+   -webkit-animation: bounce 0.6s;  
           animation: bounce 0.6s;
 }
 

@@ -12,6 +12,7 @@ var text = popup.querySelector("[name=feedback-text]");
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   mask.classList.add("modal-show");
+  popup.classList.add("modal-animation");
   name.focus();
   });
 
@@ -34,7 +35,7 @@ form.addEventListener("submit", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (mask.classList.contains("modal-show")) {
-        maskmask.classList.remove("modal-show");
+        mask.classList.remove("modal-show");
         popup.classList.remove("modal-error");
       }
     }

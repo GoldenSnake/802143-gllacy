@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 1200px;
+  min-width: 1146px;
   font-family: "Roboto", Tahoma, sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -70,8 +70,8 @@ body {
 .container {
   margin: 0 auto;
   width: 1146px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 17px;
+  padding-right: 17px;
   padding-top: 10px;
 }
 
@@ -580,6 +580,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -620,6 +621,7 @@ body {
 
 .promo-item p {
   margin: 0;
+  max-width: 517px;
   padding: 15px 25px 0 18px;
 }
 
@@ -658,7 +660,7 @@ body {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: flex-start;
 }
 
 .catalog-item,
@@ -670,8 +672,18 @@ body {
   text-align: center; 
 }
 
+.catalog-item {
+  margin-right: 26px;
+}
+
 .product {
   margin-bottom: 36px;
+  margin-right: 26px;
+}
+
+.product:nth-child(4n),
+.catalog-item:nth-child(4n){
+  margin-right: 0;
 }
 
 .catalog-item img,
@@ -699,7 +711,7 @@ body {
   margin: 0;
   padding: 0;
   position: absolute;
-  bottom: 66px;
+  top: 210px;
   left: 0;
 }
 
@@ -819,9 +831,7 @@ body {
   min-height: 220px;
   background-color: #ffffff;
   background-image: url(../img/blog-background.jpg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 100%;
+  background-position: -52px -224px;
 }
 
 .blog p {

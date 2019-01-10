@@ -13,8 +13,7 @@ link.addEventListener("click", function (evt) {
   evt.preventDefault();
   mask.classList.add("modal-show");
   popup.classList.add("modal-animation");
-  name.focus();
-  });
+});
 
  close.addEventListener("click", function (evt) {
    evt.preventDefault();
@@ -23,20 +22,20 @@ link.addEventListener("click", function (evt) {
   });
 
 form.addEventListener("submit", function (evt) {
-     if (!name.value || !email.value || !text.value) {
-      evt.preventDefault();
-      popup.classList.remove("modal-error");
-      popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add("modal-error");
-    }
-  });
+  if (!name.value || !email.value || !text.value) {
+    evt.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
+  }
+});
 
  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (mask.classList.contains("modal-show")) {
-        mask.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      }
-    }
-  });
+   if (evt.keyCode === 27) {
+     evt.preventDefault();
+     if (mask.classList.contains("modal-show")) {
+       mask.classList.remove("modal-show");
+       popup.classList.remove("modal-error");
+     }
+   }
+ });

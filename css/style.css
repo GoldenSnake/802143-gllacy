@@ -780,7 +780,7 @@ body {
   min-height: 301px;
   
   background-color: #e7d8b8;
-  background-image: url(../img/about-background.jpg);
+  background-image: url(../img/about-background.png);
   background-position: 12px 0;
   background-repeat: repeat;
   border-radius: 15px;
@@ -1357,7 +1357,7 @@ social-button:focus {
 .select::after {
   content: "";
   position: absolute;
-  top: 37px;
+  bottom: 15px;
   left: 166px;
   width: 11px;
   height: 10px;
@@ -1537,8 +1537,8 @@ social-button:focus {
 .price-controls::after {
   content: "";
   position: absolute;
-  top: 7px;
-  left: 110px;
+  bottom: 55px;
+  left: 111px;
   width: 7px;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.7);
